@@ -1,0 +1,143 @@
+[
+
+{ "name":"一分钟人",
+
+/*设置单位名称*/
+
+   "cost":6,
+
+     /*单位制造成本（单位：产能）*/
+
+   "unitType":"Ranged",
+
+   /*设置单位类型,在新版本UnCiv中此值必须填，否则会报错*/
+
+   "movement":5,
+
+ /*单位移动力*/
+
+"strength":35,
+
+/*单位近战攻击能力*/
+
+   "rangedStrength":10,
+
+   /*单位远程攻击力*/
+
+   "requiredTech":"Gunpowder",
+
+/*设置制造单位所必须科技。*/
+
+"obsoleteTech":"Industrialization",
+
+/*设置单位过时科技，研究所设置的科技后，被设置单位过时科技的单位过时*/
+
+"upgradesTo":"Rifleman",
+
+/*设置单位可以升级成的单位。*/
+
+"uniqueTo":"America"
+
+/*设置单位是否为某一国家专属，和所属国家名字*/
+
+},
+
+{ "name":"59式坦克",
+
+   "cost":4,
+
+   "unitType":"Melee",
+
+   "movement":4,
+
+"strength":50,
+
+"requiredTech":"Combined Arms",
+
+"upgradesTo":"59G-125坦克",
+
+"obsoleteTech":"Future Tech",
+
+"requiredResource":"Oil",
+
+"uniqueTo":"China",
+
+"Sounds":"tankshot"
+
+},
+
+{ "name":"59G-125坦克",
+
+   "cost":6,
+
+   "unitType":"Ranged",
+
+   "movement":4,
+
+"strength":160,
+
+ "rangedStrength":40,
+
+"requiredTech":"Lasers",
+
+"obsoleteTech":"Future Tech",
+
+"requiredResource":"Oil",
+
+"uniqueTo":"China",
+
+"Sounds":"tankshot",
+
+"uniques":["+3 Visibility Range"]
+
+/*设置单位点击战斗声音*/
+
+},
+
+	{		"name": "白杨导弹（RT-2PM弹道导弹）",
+
+		"unitType": "Missile",
+
+		"movement": 50,
+
+		"strength": 600,
+
+		"rangedStrength": 600,
+
+		"range": 200,
+
+		"cost": 2000,
+
+		"uniqueTo":"Russia",
+
+		"requiredTech": "Advanced Ballistics",
+
+		"uniques": ["Nuclear weapon of Strength [2]", "Requires [Manhattan Project]",
+
+			"Blast radius [2]", "Consumes [2] [Uranium]"],
+
+		"attackSound": "nuke",
+
+		"uniques":["+2 Visibility Range"]
+
+	},
+
+{ "name":"工程兵",
+
+   "cost":30,
+
+   "unitType":"Melee",
+
+   "movement":4,
+
+"strength":30,
+
+"requiredTech":"Scientific Theory",
+
+"obsoleteTech":"Future Tech","uniques":["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles","Can build [永固性堡垒] improvements on tiles","Bonus for units in 2 tile radius 10%"]
+
+/*设置单位特性*/
+
+}
+
+]
