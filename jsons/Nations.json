@@ -1,0 +1,32 @@
+[
+{
+"name":"波兰立陶宛联邦",
+/*文明名称*/
+"leaderName":"亚德维加", 
+/*领袖名称*/
+"adjective":["波立联邦"],
+/*文明形容词。*/
+"startBias":["Plains"],
+/*文明出生偏好地型*/
+"outerColor":[255,97,0],
+/*在选择势力界面时的外部颜色*/
+"innerColor":[255,250,250],
+/*在选择势力界面时的内部颜色，注意：此颜色同时也是城市名称、单位图标显示颜色*/
+"cities":["克拉科夫","华沙"],
+/*文明城市名字*/
+"declaringWar":"以天主之名征服你",
+/*此文明攻击其他文明时，其他收到的弹窗内容*/
+"uniqueName":"贵族选举君主制",
+/*文明特殊加成名称。*/
+"uniques":["[+3 Culture] per [3] in all cities connected to capital",
+ "Unhappiness from number of Cities doubled", "[-20]% unhappiness from population [in all cities]"
+ /*文明特殊加成内容,一个特殊加成名称对应一个特殊加成内容*/
+
+
+]
+}
+
+
+
+
+]
