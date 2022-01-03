@@ -85,13 +85,11 @@
 		"hurryCostModifier":20,
 		"attackSound":"horse"
 	},
-	{ "name":"建设兵团",
+  { "name":"建设兵团",
    "cost":60,
    "unitType":"Melee",
    "movement":6,
 "strength":50,
-"requiredTech":"Dynamite",
-"uniqueTo":"China",
-"uniques":["Can build [Farm] improvements on tiles","Can build [Fort] improvements on tiles","Can build [Plantation] improvements on tiles","Can build [Quarry] improvements on tiles","Can build [Academy] improvements on tiles"，"Can build [Mine] improvements on tiles"]
+"requiredTech":"Dynamite","uniqueTo":"China","uniques":["Can build [Farm] improvements on tiles","Can build [Fort] improvements on tiles","Can build [Plantation] improvements on tiles","Can build [Quarry] improvements on tiles","Can build [Academy] improvements on tiles","Can build [Mine] improvements on tiles"]
 }
 ]
