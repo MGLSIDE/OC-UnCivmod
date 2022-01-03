@@ -84,5 +84,14 @@
 		"uniques": ["Canmove after attacking","No defensive terrain bonus","[-33]% Strength <vs cities>" ],
 		"hurryCostModifier":20,
 		"attackSound":"horse"
-	}
+	},
+	{ "name":"建设兵团",
+   "cost":60,
+   "unitType":"Melee",
+   "movement":6,
+"strength":50,
+"requiredTech":"Plastics",
+"uniqueTo":"China",
+"uniques":["Can build [Farm] improvements on tiles","Can build [Fort] improvements on tiles","Can build [Plantation] improvements on tiles","Can build [Quarry] improvements on tiles"]
+}
 ]
