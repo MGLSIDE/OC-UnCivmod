@@ -1,7 +1,7 @@
 [
 { "name":"一分钟人",
 /*设置单位名称*/
-   "cost":30,
+   "cost":50,
      /*单位制造成本（单位：产能）*/
    "unitType":"Ranged",
    /*设置单位类型,在新版本UnCiv中此值必须填，否则会报错*/
@@ -33,7 +33,7 @@
 "Sounds":"tankshot"
 },
 { "name":"59G-125坦克",
-   "cost":90,
+   "cost":120,
    "unitType":"Ranged",
    "movement":4,
 "strength":160,
@@ -62,7 +62,7 @@
 		"uniques":["+2 Visibility Range"]
 	},
 { "name":"工程兵",
-   "cost":30,
+   "cost":80,
    "unitType":"Melee",
    "movement":4,
 "strength":30,
@@ -85,11 +85,25 @@
 		"hurryCostModifier":20,
 		"attackSound":"horse"
 	},
-  { "name":"建设兵团",
+	{ "name":"建设兵团",
    "cost":60,
    "unitType":"Melee",
    "movement":6,
 "strength":50,
-"requiredTech":"Dynamite","uniqueTo":"China","uniques":["Can build [Farm] improvements on tiles","Can build [Fort] improvements on tiles","Can build [Plantation] improvements on tiles","Can build [Quarry] improvements on tiles","Can build [Academy] improvements on tiles","Can build [Mine] improvements on tiles"]
-}
+"requiredTech":"Dynamite",
+"uniqueTo":"China",
+"uniques":["Can build [Farm] improvements on tiles","Can build [Fort] improvements on tiles","Can build [Plantation] improvements on tiles","Can build [Quarry] improvements on tiles","Can build [Academy] improvements on tiles","Can build [Mine] improvements on tiles"]
+},	{
+		"name": "奥斯曼炮兵",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 11,
+		"rangedStrength": 28,
+		"range": 3,
+		"cost": 220,
+		"requiredTech": "Gunpowder",
+		"upgradesTo":"Artillery",
+		"uniques": ["[+100]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
+			"Must set up to ranged attack","[-1] Sight","Ranged attacks may be performed over obstacles", "Never appears as a Barbarian unit"]
+	}
 ]
