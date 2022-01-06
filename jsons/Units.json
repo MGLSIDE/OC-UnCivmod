@@ -55,7 +55,7 @@
 		"range": 200,
 		"cost": 2000,
 		"uniqueTo":"Russia",
-		"requiredTech": "Advanced Ballistics",
+		"requiredTech": "氢弹",
 		"uniques": ["Nuclear weapon of Strength [2]", "Requires [Manhattan Project]",
 			"Blast radius [2]", "Consumes [2] [Uranium]"],
 		"attackSound": "nuke",
