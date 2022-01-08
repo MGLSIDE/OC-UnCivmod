@@ -123,6 +123,15 @@
 		"uniques":["Provides [4] [Horses]","Limited to [5] per Civilization"],
 		"requiredTech":"Animal Husbandry"
 	
-	}
+	},
+		/*{ "name":"ASML（阿斯麦）"
+	  "cost":30,
+	  "maintenance":23,
+	"isNationalWonder":true,
+	"uniqueTo":"The Netherlands",
+	 "gold":20,
+	  "requiredTech":"Electronics",
+	  	"uniques": []
+	}*/
 	
 ]
