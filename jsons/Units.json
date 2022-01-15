@@ -55,7 +55,7 @@
 		"range": 200,
 		"cost": 2000,
 		"uniqueTo":"Russia",
-		"requiredTech": "氢弹",
+		"requiredTech": "氢弹头",
 		"uniques": ["Nuclear weapon of Strength [2]", "Requires [Manhattan Project]",
 			"Blast radius [2]", "Consumes [2] [Uranium]"],
 		"attackSound": "nuke",
@@ -112,6 +112,27 @@
    "movement":5,
 "strength":50,
    "requiredTech":"Radar",
-   "uniques":["+6 Visibility Range"]
-}
+   "uniques":["+17 Visibility Range"]
+},{
+		"name": "氢弹",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 2000,
+		"rangedStrength": 2000,
+		"range": 8,
+		"cost": 550,
+		"requiredTech": "氢弹头",
+		"uniques": ["[+100]% maintenance costs"],
+		"attackSound": "missile"
+	}	,{
+		"name": "Giant Death Robot",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 150,
+		"cost": 425,
+		"requiredTech": "氘氘聚变",
+		"requiredResource": "Uranium",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "gdrAttack"
+	}
 ]
