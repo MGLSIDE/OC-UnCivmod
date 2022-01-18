@@ -152,11 +152,23 @@
 				"prerequisites":["Writing"],
 				"quote":"'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
 			},
+								{
+		"name":"数形结合思想",
+				"row":6,
+"prerequisites":["Mathematics"],
+"quote":"数形结合思想"
+			},
 			{
 				"name":"Currency",
 				"row": 7,
 				"prerequisites":["Mathematics"],
 				"quote":"'Better is bread with a happy heart than wealth with vexation.' - Amenemope"
+			},
+							{
+		"name":"代数",
+				"row":9,
+"prerequisites":["Mathematics"],
+"quote":"代数"
 			},
 			{
 				"name":"Engineering",
@@ -193,6 +205,18 @@
 				"uniques":["Enables Open Borders agreements"],
 				"quote":"'The only thing that saves us from the bureaucracy is its inefficiency' - Eugene McCarthy"
 			},
+							{
+		"name":"解析式",
+				"row":6,
+"prerequisites":["代数"],
+"quote":"解析式"
+			},
+								{
+		"name":"虚数",
+				"row":4,
+"prerequisites":["数形结合思想"],
+"quote":"复数"
+			},
 			{
 				"name":"Guilds",
 				"row": 7,
@@ -228,6 +252,17 @@
 				"prerequisites":["Theology","Civil Service"],
 				"uniques":["Enables conversion of city production to science","Enables Research agreements"],
 				"quote":"'Education is the best provision for old age.' - Aristotle"
+			},
+										{
+		"name":"复数",
+				"row":4,
+"prerequisites":["虚数"],
+"quote":"复数"
+			},		{
+		"name":"函数",
+				"row":5,
+"prerequisites":["解析式"],
+"quote":"函数"
 			},
 			{
 				"name":"Chivalry",
@@ -277,9 +312,15 @@
 				"quote":"'Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.' - Homer"
 			},
 			{
+				"name":"微积分",
+				"row": 5,
+				"prerequisites":["函数"],
+				"quote":"'Their rising all at once was as the sound of thunder heard remote' - Milton"
+			},
+			{
 				"name":"Acoustics",
 				"row": 4,
-				"prerequisites":["Education"],
+				"prerequisites":["Education","函数","复数"],
 				"quote":"'Their rising all at once was as the sound of thunder heard remote' - Milton"
 			},
 			{
@@ -363,7 +404,7 @@
 			{
 				"name":"Scientific Theory",
 				"row": 4,
-				"prerequisites":["Architecture","Economics"],
+				"prerequisites":["Architecture","Economics","微积分"],
 				"quote":"'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
 			{
@@ -785,7 +826,7 @@
 "quote":"贸易制裁"
 			}]},
 	{
-		"columnNumber": 18,
+		"columnNumber": 19,
 		"era":"Future era",
 		"techCost": 9500,
 		"buildingCost": 750,
