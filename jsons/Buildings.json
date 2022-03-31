@@ -15,9 +15,22 @@
    "maintenance":5,
    "gold":6,
    /*建筑产生金钱*/
-   "produce":6,
+   	"production": 6,
    /*建筑增加产能*/
    "RequiredResources":"Cotton"
+   /*设置修建建筑必需资源*/
+   /*当建筑奇观为国家建筑时此项设置无效。*/
+
+
+},{ "name":"现代纺织厂(化纤)",
+   "cost":13,
+   "maintenance":5,
+   "gold":6,
+   /*建筑产生金钱*/
+   	"production": 30,
+   /*建筑增加产能*/
+   "RequiredResources":"Oil"
+   		"requiredResource": "Oil",
    /*设置修建建筑必需资源*/
    /*当建筑奇观为国家建筑时此项设置无效。*/
 
@@ -59,16 +72,24 @@
    /*建筑产生金钱*/
    "produce":5,
    /*建筑增加产能*/
+    "RequiredResources":"电能",
+   /* "requiredNearbyImprovedResources": ["电能"]*/
+   "requiredResource": "电能",
    "requiredTech":"Globalization",
    "uniqueTo":"America",
     "isNationalWonder":true,
      "isWonder":true,
- "requiredBuildingInAllCities":"Harbor",
+/*"requiredBuildingInAllCities":"Harbor",*/
   /*设置修建建筑建筑必须要在所有城市修建的建筑*/
+  /*此项属性在新版本中已失效。*/
+  
  "quote":"美国世界贸易大厦即世界贸易中心大厦，建成于1973年12月（1号楼，即北塔）--1983年（7号大厦），位于曼哈顿市区南端，共有7幢建筑物，自1974年启用以来即成为纽约的地标之一，有“世界之窗”之称，是著名的建筑艺术家雅马萨奇最重要的代表作之一。它占地达16英亩之广,其中，世贸中心一二号大厦 (双子大厦)是两座外观相同，高110层的摩天大楼 世贸中心其主要业务是控制进出口等国际贸易, 担负着美利坚合众国国际贸易的发展重任，里面除贸易公司之外，也有运输、通信、银行、保险、海关等行业的公司和政府与社会机构、和市长紧急事务指挥中心等，凡与贸易及港湾有关的活动均集中于此，中心内共有企业约1200家，员工5万多名，每天访客达8万。  “9·11事件”后，世贸楼群已是一片令人悲伤的废墟。它是人们心底深处的抽搐，是永远也不可能改变的历史。它也促使人们不得不去认真思考，人类社会为恐怖主义行为所要付出的代价是何等沉重。 ",
  "specialistSlots":{"Merchant":3}
+ "uniques": ["Requires a [Harbor] in all cities"]
+ /*设置建筑特性，特性列表数组的第1个字符串，用于在新版本中替换设置修建建筑前必须要在所有城市修建的建筑的requiredBuildingInAllCities属性*/
+ /*简而言之效果就是设置修建建筑前的必须要在所有城市修建的建筑*/
 }
-{ "name":"圣索菲亚大教堂",
+{ "name":"Hagia Sophia",
   "cost":40,
     "produce":1,
     "gold":10,
@@ -133,5 +154,126 @@
 	  "requiredTech":"Electronics",
 	  	"uniques": []
 	}*/
+	{
+		"name": "盖亚空间望远镜",
+		"isWonder": true,
+		"cost":50,
+		 "isNationalWonder":true,
+		"greatPersonPoints": {"Great Scientist": 3},
+		 "uniqueTo":"France",
+		"uniques": ["[2] free [Great Scientist] units appear",
+			"[+15]% Production when constructing [Spaceship part] buildings [in this city]",
+			"Gain a free [Spaceship Factory] [in this city]"],
+			/*设置建筑特殊加成效果*/
+		"requiredTech": "Satellites",
+		"quote": "'盖亚空间望远镜是欧洲航天局（ESA）的空间望远镜，于2013年12月19日在法属圭亚那成功发射升空，飞往距地球150万公里的拉格朗日L2点。该点是太阳和地球引力的平衡点之一，在太阳与地球连线外侧，由于背对太阳受干扰较少，适合安放太空望远镜等空间探测设备。盖亚空间望远镜将观测银河系中约10亿颗恒星的位置和运动，绘制迄今最精确的银河系三维地图，并帮助解答有关银河系起源和演化的问题。"
+		
+	},
+	{
+		"name": "詹姆斯韦布望远镜",
+		"isWonder": true,
+		"cost":100,
+		 "isNationalWonder":true,
+		"greatPersonPoints": {"Great Scientist": 4},
+		 "uniqueTo":"America",
+		"uniques": ["[5] free [Great Scientist] units appear",
+			"[+35]% Production when constructing [Spaceship part] buildings [in this city]",
+			"Gain a free [Spaceship Factory] [in this city]"],
+			/*设置建筑特殊加成效果*/
+		"requiredTech": "Satellites",
+		"quote": "詹姆斯·韦布太空望远镜的质量为6.2吨，约为哈勃空间望远镜（11吨）的一半。主反射镜由铍制成，口径达到6.5米，面积为哈勃太空望远镜的5倍以上。它还能在近红外波段工作、能在接近绝对零度（相当于零下273.15摄氏度）的环境中运行。当地时间2021年12月22日，美国国家航空航天局称由于法属圭亚那欧洲太空港的恶劣天气条件，原定于12月24日发射韦布太空望远镜的VA256航班被推迟，新的发射日期为12月25日。法国当地时间2021年12月25日13时15分（北京时间25日20时15分），美国宇航局的詹姆斯·韦伯太空望远镜在法属圭亚那库鲁基地成功发射升空。其耗时之长达25年，所消耗的资金达100亿美元，在其制造的25年之中多次差点面临被取消。'"
+		
+	},
+	{
 	
+			"name": "知识地图计划",
+		"isWonder": true,
+		"cost":50,
+		 "isWonder":true,
+		 "science":10,
+		"uniques": ["[2] free [Great Scientist] units appear"],
+			/*设置建筑特殊加成效果*/
+		"requiredTech": "Electronics",
+		"quote": "科学家不是依赖于个人的思想，而是综合了几千人的智慧，所有的人想一个问题，并且每人做它的部分工作，添加到正建立起来的伟大知识大厦之中--'欧内斯特.卢瑟福'"},
+		{
+	
+			"name": "人类基因组计划",
+		"isWonder": true,
+		"cost":60,
+		 "isWonder":true,
+		 "science":30,
+		"uniques": ["[2] free [Great Scientist] units appear"],
+			/*设置建筑特殊加成效果*/
+		"requiredTech": "Pharmaceuticals",
+		"quote": "人类基因组计划是一项规模宏大，跨国跨学科的科学探索工程。其宗旨在于测定组成人类染色体中包含的30亿个碱基对组成的核苷酸序列，从而绘制人类基因组图谱，并且辨识其载有的基因及其序列，达到破译人类遗传信息的最终目的。人类基因组计划与曼哈顿原子弹计划和阿波罗计划并称为三大科学计划，是人类科学史上的又一个伟大工程，被誉为生命科学的“登月计划”。人类基因组计划由美国科学家于1985年率先提出，于1990年正式启动的。美、英、法、德、日、中，六国科学家共同参与了这一预算达30亿美元的人类基因组计划。按照这个计划的设想，在2005年，要把人体内约2.5万个基因的密码全部解开，同时绘制出人类基因的图谱。换句话说，就是要揭开组成人体2.5万个基因的30亿个碱基对的秘密。截止到2003年4月14日，人类基因组计划的测序工作已经完成。"},
+		{		"name": "核爆锅炉",
+		"cost":100,
+	 "production": 50,
+	  "maintenance":10,
+		"requiredTech": "氢弹头",
+		   "RequiredResources":"Uranium"
+		   "uniques":["Provides [50] [电能]","Limited to [5] per Civilization"],
+	}
+	,{
+	
+			"name": "太阳帆计划",
+		"isWonder": true,
+		"cost":30,
+		"isNationalWonder":true,
+		 "science":20,
+		 	"production": 10,
+		"uniques": ["[2] free [Great Scientist] units appear"],
+			/*设置建筑特殊加成效果*/
+		"requiredTech": "Satellites",
+		"quote": "太阳帆计划，随着微电子和材料科学的飞速发展，探索更快、更好、更便宜的空间飞行方式的美国宇航部门，重将目光投向了太阳帆计划。美国航空航天局的科学家称，第一艘飞往太阳系边缘的光帆航天器可在10年内发射。美国已提出建造用于监视太阳表面活动的太阳帆计划，它将用传统的火箭将帆飞船送到距地球150万公里的地方，在此，太阳的引力与地球的引力相互平衡。到达此处后，航天器展开一个直径70米的帆，通过选择倾角，帆即可提供所需的能量，使飞船向太阳方向继续飞行150万公里，并与地球保持同步。从这一有利地点，就能监视干扰卫星和破坏地面电网的太阳磁暴，在磁暴袭击地球前2小时发出警报，时间几乎比预警时间长了一倍。"},
+{ "name":"法兰西学会（学术院）",
+  "cost":100,
+  "isWonder":true,
+   "isNationalWonder":true,
+  "science":5,
+ "requiredTech":"Civil Service",
+ "maintenance":10,
+ "culture":30,
+ /*设置奇观（建筑）增加的文化*/
+  "uniqueTo":"France",
+  "uniques": ["Free Social Policy"],
+  "quote":"法兰西学会是法国的权威学术机构，始建于1795年，由5个院组成，分别是：法兰西学术院，法兰西文学院，法兰西科学院，法兰西艺术院，法兰西人文学院，而法兰西学术院则是法兰西学会5个分院中最出名和最权威的机构。这与中国不同，中国最权威的两院是科学和工程院，而法国最权威的学院却是语言院。究其原因，是因为法语代表着法兰西民族对世界的影响力，是民族精神的象征。法国人认为法语是世界上最优美的语言，一直以保持法语的纯洁为傲。"},
+	{
+	
+			"name": "红旗渠",
+		"cost":50,
+		 "isNationalWonder":true,
+				"greatPersonPoints":{"Great Engineer": 5},
+		"requiredTech": "Dynamite", 
+		 	"production": 40,
+		 	"maintenance":10,
+		 "food":15,
+		 "uniqueTo":"China"},
+		 	{ 
+		"name": "海水淡化厂",
+		 "RequiredResources":"电能",
+	/*"requiredNearbyImprovedResources": ["电能"],*/
+		"requiredResource": "电能",
+    "cityHealth":13,
+		"greatPersonPoints": {"Great Engineer": 1},
+		"uniques": ["Must be next to [Coast]", "[+1 Food, +1 Production, +1 Gold] from [Desert] tiles without [Flood plains] [in this city]"],
+		"requiredTech": "Nanotechnology"
+	},
+		{ 
+		"name": "晒盐厂",
+		"culture": 1,
+	 "food":8,
+		"greatPersonPoints": {"Great Engineer": 1},
+		"uniques": ["Must be next to [Coast]", "Gain a free [Amphitheater] [in this city]", "[+15 Production] <after discovering [Chemistry]>"],
+		"requiredTech": "Currency"
+	},{
+		"name": "Paper Maker",
+		"replaces": "Library",
+		"uniqueTo": "China",
+		"hurryCostModifier": 25,
+		"gold": 2,
+				"requiredResource": "竹林",
+		"uniques": ["[+1 Science] per [2] population [in this city]"],
+		"requiredTech": "Writing"
+	}
 ]

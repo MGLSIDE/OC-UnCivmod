@@ -1,0 +1,14 @@
+[{"name":"电能",
+"resourceType":"Strategic"/*,
+"improvement":"发电厂"*/,
+"revealedBy":"Electricity"
+/*资源显示和使用所需科技*/
+},{"name":"竹林",
+/*资源名称*/
+"resourceType":"Strategic"/*,
+资源类型
+"improvement":"发电厂"*/,
+		"terrainsCanBeFoundOn": ["Jungle","Forest"]
+		/*资源可出现地带*/
+}
+]
