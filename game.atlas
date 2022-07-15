@@ -1,0 +1,69 @@
+
+game.png
+size: 2048, 2048
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+UnitIcons/工程兵
+  rotate: false
+  xy: 1, 1
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/雷达车
+  rotate: false
+  xy: 1, 600
+  size: 640, 500
+  orig: 640, 500
+  offset: 0, 0
+  index: -1
+BuildingIcons/核爆锅炉
+  rotate: false
+  xy: 1, 1100
+  size: 308, 432
+  orig: 308, 432
+  offset: 0, 0
+  index: -1
+BuildingIcons/红旗渠
+  rotate: false
+  xy: 1, 1532
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/中国天眼（FAST）射电望远镜
+  rotate: false
+  xy: 1, 1732
+  size: 400, 400
+  orig: 400, 400
+  offset: 0, 0
+  index: -1
+BuildingIcons/太阳帆计划
+  rotate: false
+  xy: 1, 2132
+  size: 400, 400
+  orig: 400, 400
+  offset: 0, 0
+  index: -1
+BuildingIcons/人类基因组计划
+  rotate: false
+  xy: 1, 2532
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/翼骑兵
+  rotate: false
+  xy: 1, 2732
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+NationIcons/波兰
+  rotate: false
+  xy: 1, 2932
+  size: 500, 491
+  orig: 500, 491
+  offset: 0, 0
+  index: -1

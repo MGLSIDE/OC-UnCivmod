@@ -140,6 +140,12 @@
 		"buildingCost": 100,
 		"wonderCost": 250,
 		"techs":[
+		{
+				"name":"盔甲锻造",
+				"row": 5,
+				"prerequisites":["Horseback Riding"],
+				"quote":"'我们穿着盔甲行走在人世间，总能感到我们所爱的人，近在咫尺却又无法触及。\n----珍妮特·温特森"
+			},
 			{
 				"name":"Philosophy",
 				"row": 2,
@@ -153,22 +159,16 @@
 				"quote":"'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
 			},
 								{
-		"name":"数形结合思想",
+		"name":"几何学",
 				"row":6,
 "prerequisites":["Mathematics"],
-"quote":"数形结合思想"
+"quote":"几何学"
 			},
 			{
 				"name":"Currency",
 				"row": 7,
 				"prerequisites":["Mathematics"],
 				"quote":"'Better is bread with a happy heart than wealth with vexation.' - Amenemope"
-			},
-							{
-		"name":"代数",
-				"row":9,
-"prerequisites":["Mathematics"],
-"quote":"代数"
 			},
 			{
 				"name":"Engineering",
@@ -201,32 +201,34 @@
 			{
 				"name":"Civil Service",
 				"row": 5,
-				"prerequisites":["Currency","Horseback Riding","Drama and Poetry"],
+				"prerequisites":["Currency","Drama and Poetry"],
 				"uniques":["Enables Open Borders agreements"],
 				"quote":"'The only thing that saves us from the bureaucracy is its inefficiency' - Eugene McCarthy"
 			},
 							{
-		"name":"解析式",
-				"row":6,
-"prerequisites":["代数"],
+		"name":"代数",
+				"row":4,
+"prerequisites":["几何学"],
 "quote":"解析式"
 			},
-								{
-		"name":"虚数",
-				"row":4,
-"prerequisites":["数形结合思想"],
-"quote":"复数"
-			},
+						
+								
 			{
 				"name":"Guilds",
-				"row": 7,
+				"row": 6,
 				"prerequisites":["Currency"],
 				"uniques":["Enables conversion of city production to gold"],
 				"quote":"'The merchants and the traders have come; their profits are pre-ordained...' - Sri Guru Granth Sahib"
 			},
 			{
+				"name":"Chivalry",
+				"row": 8,
+				"prerequisites":["Currency","Engineering","盔甲锻造"],
+				"quote":"'Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.' - Malory"
+			},
+			{
 				"name":"Metal Casting",
-				"row": 9,
+				"row": 10,
 				"prerequisites":["Engineering","Iron Working"],
 				"quote":"'When pieces of bronze or gold or iron break, the metal-smith welds them together again in the fire, and the bond is established.' - Sri Guru Granth Sahib"
 			}
@@ -239,41 +241,32 @@
 		"buildingCost": 160,
 		"wonderCost": 400,
 		"techs":[
+				{
+		"name":"无理数",
+				"row":3,
+        "prerequisites":["代数"],
+                    "quote":"希巴斯（Hippasus，米太旁登地方人，公元前470年左右）发现了一个腰为1的等腰直角三角形的斜边（即2的2次方根）永远无法用最简整数比（不可公度比）来表示，从而发现了第一个无理数，推 翻了毕达哥拉斯的著名理论。相传当时毕达哥拉斯派的人正在海上，但就因为这一发现而把希巴斯抛入大海。"
+			},
 			{
 				"name":"Compass",
 				"cost": 375,
 				"row": 1,
 				"prerequisites":["Optics","Theology"],
-				"quote":"'I find the great thing in this world is not so much where we stand, as in what direction we are moving.' - Oliver Wendell Holmes"
+				"quote":"I find the great thing in this world is not so much where we stand, as in what direction we are moving.' - Oliver Wendell Holmes.'-Lao Tzu"
 			},
 			{
 				"name":"Education",
-				"row": 3,
+				"row": 4,
 				"prerequisites":["Theology","Civil Service"],
 				"uniques":["Enables conversion of city production to science","Enables Research agreements"],
-				"quote":"'Education is the best provision for old age.' - Aristotle"
+				"quote":"不贵其师，不爱其资，虽智大迷，是谓要妙\n一一《道德经》"
 			},
-										{
-		"name":"复数",
-				"row":4,
-"prerequisites":["虚数"],
-"quote":"复数"
-			},		{
-		"name":"函数",
-				"row":5,
-"prerequisites":["解析式"],
-"quote":"函数"
-			},
-			{
-				"name":"Chivalry",
-				"row": 6,
-				"prerequisites":["Civil Service","Guilds"],
-				"quote":"'Whoso pulleth out this sword of this stone and anvil, is rightwise king born of all England.' - Malory"
-			},
+									
+			
 			{
 				"name":"Machinery",
 				"row": 8,
-				"prerequisites":["Guilds","Engineering"],
+				"prerequisites":["Chivalry"],
 				"uniques":["Improves movement speed on roads"],
 				"quote":"'The press is the best instrument for enlightening the mind of man, and improving him as a rational, moral and social being.' - Thomas Jefferson"
 			},
@@ -289,102 +282,85 @@
 				"prerequisites":["Metal Casting"],
 				"quote":"'John Henry said to his Captain, / 'A man ain't nothin' but a man, / And before I'll let your steam drill beat me down, / I'll die with the hammer in my hand.'' - Anonymous: The Ballad of John Henry, the Steel-Drivin' Man"
 			}
+	
 		]
 	},
-	{
+		{
 		"columnNumber": 7,
-		"era":"Renaissance era",
+		"era": "Renaissance era",
 		"techCost": 780,
 		"buildingCost": 200,
 		"wonderCost": 500,
-		"techs":[
-				{
-		"name":"电荷的发现",
-				"row":3,
-"prerequisites":["Education"],
-"quote":"电荷的发现"
-			},
+		"techs": [
 			{
-				"name":"Astronomy",
+				"name": "Astronomy",
 				"row": 2,
-				"uniques":["[+1] Movement <for [Embarked] units>","Enables embarked units to enter ocean tiles"],
-				"prerequisites":["Compass","Education"],
-				"quote":"'Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.' - Homer"
+				"uniques": ["[+1] Movement <for [Embarked] units>","Enables [Embarked] units to enter ocean tiles"],
+				"prerequisites": ["Compass","Education"],
+				"quote": "'Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.' - Homer"
 			},
 			{
-				"name":"微积分",
-				"row": 5,
-				"prerequisites":["函数"],
-				"quote":"'Their rising all at once was as the sound of thunder heard remote' - Milton"
-			},
-			{
-				"name":"Acoustics",
+				"name": "Acoustics",
 				"row": 4,
-				"prerequisites":["Education","函数","复数"],
-				"quote":"'Their rising all at once was as the sound of thunder heard remote' - Milton"
+				"prerequisites": ["Education"],
+				"quote": "'Their rising all at once was as the sound of thunder heard remote' - Milton"
 			},
 			{
-				"name":"Banking",
+				"name": "Banking",
 				"row": 6,
-				"prerequisites":["Chivalry", "Education"],
-				"quote":"'Happiness: a good bank account, a good cook and a good digestion' - Jean Jacques Rousseau"
+				"prerequisites": ["Guilds", "Education"],
+				"quote": "'Happiness: a good bank account, a good cook and a good digestion' - Jean Jacques Rousseau"
 			},
 			{
-				"name":"Printing Press",
+				"name": "Printing Press",
 				"row": 8,
-				"prerequisites":["Machinery","Physics","Chivalry"],
-				"quote":"'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times"
+				"prerequisites": ["Machinery","Physics"],
+				"quote": "'It is a newspaper's duty to print the news and raise hell.' - The Chicago Times"
 			},
 			{
-				"name":"Gunpowder",
+				"name": "Gunpowder",
 				"row": 10,
-				"prerequisites":["Physics","Steel"],
-				"quote":"'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
+				"prerequisites": ["Physics","Steel"],
+				"quote": "'The day when two army corps can annihilate each other in one second, all civilized nations, it is to be hoped, will recoil from war and discharge their troops.' - Alfred Nobel"
 			}
 		]
 	},
 	{
 		"columnNumber": 8,
-		"era":"Renaissance era",
+		"era": "Renaissance era",
 		"techCost": 1150,
 		"buildingCost": 250,
 		"wonderCost": 625,
-		"techs":[
-				{
-		"name":"电池的发明",
-				"row":3,
-"prerequisites":["电荷的发现"],
-"quote":"1800年，亚历山大·伏打伯爵将铜片和锌片浸于食盐水中，并接上导线，制成了第一个电池：伏打电池，堪称是现代电池的元祖。伏打电池给予科学家一种比静电发电机更稳定的电源，能够连续不断的供给电流。"
-			},
+		"techs": [
 			{
-				"name":"Navigation",
+				"name": "Navigation",
 				"row": 2,
-				"prerequisites":["Astronomy"],
-				"quote":"'The winds and the waves are always on the side of the ablest navigators.' - Edward Gibbon"
+				"prerequisites": ["Astronomy"],
+				"quote": "'The winds and the waves are always on the side of the ablest navigators.' - Edward Gibbon"
 			},
 			{
-				"name":"Architecture",
+				"name": "Architecture",
 				"row": 4,
-				"prerequisites":["Acoustics","Banking"],
-				"quote":"'Architecture begins where engineering ends.' - Walter Gropius"
+				"prerequisites": ["Acoustics","Banking"],
+				"quote": "'Architecture begins where engineering ends.' - Walter Gropius"
 			},
 			{
-				"name":"Economics",
+				"name": "Economics",
 				"row": 6,
-				"prerequisites":["Banking","Printing Press"],
-				"quote":"'Compound interest is the most powerful force in the universe.' - Albert Einstein"
+				"prerequisites": ["Banking","Printing Press"],
+				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein"
 			},
 			{
-				"name":"Metallurgy",
+				"name": "Metallurgy",
 				"row": 9,
-				"prerequisites":["Printing Press","Gunpowder"],
-				"quote":"'There never was a good knife made of bad steel.' - Benjamin Franklin"
+				"prerequisites": ["Printing Press","Gunpowder"],
+				"quote": "'There never was a good knife made of bad steel.' - Benjamin Franklin"
 			},
 			{
-				"name":"Chemistry",
+				"name": "Chemistry",
 				"row": 10,
-				"prerequisites":["Gunpowder"],
-				"quote":"'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
+				"prerequisites": ["Gunpowder"],
+				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
 			}
 		]
 	},
@@ -404,7 +380,7 @@
 			{
 				"name":"Scientific Theory",
 				"row": 4,
-				"prerequisites":["Architecture","Economics","微积分"],
+				"prerequisites":["Architecture","Economics"],
 				"quote":"'Every great advance in science has issued from a new audacity of imagination.' - John Dewey"
 			},
 			{
@@ -414,10 +390,10 @@
 				"quote":"'Industrialization based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
 			},
 			{
-		"name":"人工合成宝石",
+		"name":"拉单晶技术（提拉法）",
 				"row":8,
 "prerequisites":["Chemistry"],
-"quote":"人工合成宝石"
+"quote":"提拉法又称丘克拉斯基法，是丘克拉斯基(J.Czochralski)在1917年发明的从熔体中提拉生长高质量单晶的方法。这种方法能够生长无色蓝宝石、红宝石、钇铝榴石、钆镓榴石、变石和尖晶石等重要的宝石晶体。20世纪60年代，提拉法进一步发展为一种更为先进的定型晶体生长方法——熔体导模法。它是控制晶体形状的提拉法，即直接从熔体中拉制出具有各种截面形状晶体的生长技术。它不仅免除了工业生产中对人造晶体所带来的繁重的机械加工，还有效的节约了原料，降低了生产成本。"
 			},
 			{
 				"name":"Rifling",
@@ -452,16 +428,11 @@
 				"prerequisites":["Archaeology","Scientific Theory"],
 				"quote":"'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson"
 			},
-			{
-		"name":"离子注入",
-				"row":5,
-"prerequisites":["Scientific Theory"],
-"quote":"离子注入"
-			},
+			
 			{
 				"name":"Electricity",
 				"row": 3,
-				"prerequisites":["Scientific Theory","电池的发明"],
+				"prerequisites":["Scientific Theory"],
 				"quote":"'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
 			},
 			{
@@ -469,6 +440,12 @@
 				"row":7,
 "prerequisites":["Scientific Theory"],
 "quote":"现代光学"
+			},
+			{
+		"name":"人工合成宝石",
+				"row":8,
+"prerequisites":["拉单晶技术（提拉法）"],
+"quote":"人工合成宝石"
 			},
 			{
 				"name":"Steam Power",
@@ -501,7 +478,7 @@
 			{
 		"name":"半导体技术",
 			"row":5,
-"prerequisites":["离子注入","Electricity"],
+"prerequisites":["Electricity"],
 "quote":"半导体技术，利用零元素和氮元素掺杂进单晶硅来实现非线性电子元器件半导体"
 			},
 			{
@@ -515,6 +492,12 @@
 				"row": 4,
 				"prerequisites":["Electricity","Steam Power"],
 				"quote":"'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
+			},
+			{
+				"name":"电动机",
+				"row": 7,
+				"prerequisites":["Electricity"],
+				"quote":"电动机"
 			},
 			{
 				"name":"Flight",
@@ -555,12 +538,6 @@
 				"prerequisites":["Replaceable Parts", "Flight","半导体技术","光刻机"],
 				"quote":"'There's a basic principle about consumer electronics: it gets more powerful all the time and it gets cheaper all the time.' - Trip Hawkins"
 			},
-					{
-		"name":"光波性质的发现",
-				"row":7,
-"prerequisites":["现代光学"],
-"quote":"光波性质的发现"
-			},
 			{
 				"name":"Ballistics",
 				"row": 6,
@@ -572,12 +549,6 @@
 				"row":9,
 "prerequisites":["人工合成宝石"],
 "quote":"高纯度宝石合成"
-			},
-					{
-		"name":"电磁线电缆",
-				"row":2,
-"prerequisites":["Radio"],
-"quote":"电磁线电缆"
 			},
 					{
 		"name":"半导体收音机",
@@ -592,9 +563,28 @@
 				"quote":"'Any man who can drive safely while kissing a pretty girl is simply not giving the kiss the attention it deserves.' - Albert Einstein"
 			}
 		]
-	},
+	},{
+	"columnNumber": 16,
+		"era":"Atomic era",
+		"techCost": 5100,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs":[
+		{
+				"name":"相对论",
+				"row": 4,
+				"prerequisites":["Electronics"],
+				"quote":"'"
+			},
+			{
+				"name":"工程塑料",
+				"row": 3,
+				"prerequisites":["Plastics"],
+				"quote":"'"
+			}
+		]},
 	{
-		"columnNumber": 13,
+		"columnNumber": 20,
 		"era":"Atomic era",
 		"techCost": 5100,
 		"buildingCost": 500,
@@ -603,31 +593,20 @@
 			{
 				"name":"Pharmaceuticals",
 				"row": 2,
-				"prerequisites":["Plastics","Refrigeration"],
+		"prerequisites":["Refrigeration"],
 				"quote":"'In nothing do men more nearly approach the gods than in giving health to men.' - Cicero"
 			},
-					{
-		"name":"同轴电缆",
-				"row":3,
-"prerequisites":["电磁线电缆"],
-"quote":"同轴电缆"
-			},
-					{
-		"name":"移动电话设备",
-				"row":5,
-"prerequisites":["Electronics","半导体收音机"],
-"quote":"移动电话设备"
-			},
+			
 			{
 				"name":"Atomic Theory",
 				"row": 4,
-				"prerequisites":["Plastics","Electronics"],
+				"prerequisites":["相对论","工程塑料"],
 				"quote":"'The unleashed power of the atom has changed everything save our modes of thinking, and we thus drift toward unparalleled catastrophes.' - Albert Einstein"
 			},
 			{
 				"name":"Radar",
 				"row": 6,
-				"prerequisites":["Ballistics","Electronics"],
+				"prerequisites":["Ballistics","Electronics","电动机"],
 				"quote":"'Vision is the art of seeing things invisible.' - Jonathan Swift"
 			},
 			{
@@ -639,7 +618,7 @@
 		]
 	},
 	{
-		"columnNumber": 14,
+		"columnNumber":21 ,
 		"era":"Atomic era",
 		"techCost": 6400,
 		"buildingCost": 500,
@@ -650,44 +629,29 @@
 				"row": 2,
 				"prerequisites":["Atomic Theory","Pharmaceuticals"],
 				"quote":"'Only within the moment of time represented by the present century has one species, man, acquired significant power to alter the nature of his world.' - Rachel Carson"
-			},{
-		"name":"双绞线",
-				"row":3,
-"prerequisites":["同轴电缆"],
-"quote":"双绞线"
 			},
 					{
 		"name":"寻呼机",
 				"row":5,
-"prerequisites":["移动电话设备"],
+"prerequisites":["Electronics"],
 "quote":"寻呼机"
 			},
 			{
 				"name":"Nuclear Fission",
 				"row": 4,
-				"prerequisites":["Atomic Theory","Radar"],
+				"prerequisites":["Atomic Theory"],
 				"quote":"'I am become Death, the destroyer of worlds.' - J. Robert Oppenheimer"
-			},{
-"name":"光的波粒二象性",
-"row":7,"prerequisites":["光波性质的发现","Atomic Theory"],
-"quote":"光的波粒二象性与理论的提出"
 			},
 			{
 				"name":"Rocketry",
 				"row": 6,
 				"prerequisites":["Radar"],
 				"quote":"'A good rule for rocket experimenters to follow is this: always assume that it will explode.' - Astronautics Magazine, 1937"
-			},
-			{
-				"name":"Computers",
-				"row": 8,
-				"prerequisites":["Combined Arms","Radar"],
-				"quote":"'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			}
 		]
 	},
 	{
-		"columnNumber": 15,
+		"columnNumber": 22,
 		"era":"Information era",
 		"techCost": 7700,
 		"buildingCost": 750,
@@ -696,7 +660,7 @@
 			{
 				"name":"Telecommunications",
 				"row": 2,
-	"prerequisites":["Ecology","双绞线"],
+	"prerequisites":["Ecology"],
 				"quote":"'The more we elaborate our means of communication, the less we communicate.' - J.B. Priestly"
 			},
 			{
@@ -707,40 +671,71 @@
 			},
 			{
 				"name":"Advanced Ballistics",
-				"row": 5,
+				"row": 6,
 				"prerequisites":["Nuclear Fission","Rocketry"],
 				"quote":"'Our scientific power has outrun our spiritual power, we have guided missiles and misguided men.' – Martin Luther King Jr."
 			},
 			{
 				"name":"Satellites",
-				"row": 6,
+				"row": 7,
 				"prerequisites":["Rocketry"],
 				"uniques":["Reveals the entire map"],
 				"quote":"'Now, somehow, in some new way, the sky seemed almost alien.' - Lyndon B. Johnson"
 			},
 			{
-				"name":"Robotics",
-				"row": 7,
-				"prerequisites":["Rocketry","Computers"],
-				"quote":"'1. A robot may not injure a human being or, through inaction, allow a human being to come to harm. 2. A robot must obey any orders given to it by human beings, except when such orders would conflict with the First Law. 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.' - Isaac Asimov"
+				"name":"Computers",
+				"row": 8,
+				"prerequisites":["Combined Arms","Radar"],
+				"quote":"'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			},
+				{
+		"name":"蜂窝移动网络",
+				"row":5,
+"prerequisites":["寻呼机"],
+"quote":"蜂窝移动网络"
+			},	
 					{
 		"name":"氘（重氢）和氚（超重氢)的发现",
 				"row":4,
 "prerequisites":["Nuclear Fission"],
 "quote":"氘（重氢）和氚（超重氢)由澳大利亚科学家马克·奥利芬特（Mark Oliphant，也译作：马克·欧立峰，1901年10月——2000年7月)于1927年发现，同时马克·奥利芬特也进行了世界上第一次核聚变试验"
+			}
+			
+		]
+	},
+{	"columnNumber": 23,
+		"era":"Information era",
+		"techCost": 8800,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs":[
+		{
+				"name":"Particle Physics",
+				"row": 3,
+				"prerequisites":["Mobile Tactics"],
+				"quote":"'Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.' - Isaac Newton"
 			},
 			{
 				"name":"Lasers",
-				"row": 8,
-	"prerequisites":["Computers","光的波粒二象性","高纯度宝石合成"],
+				"row": 9,
+	"prerequisites":["Computers","高纯度宝石合成"],
 				"quote":"'The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armor of light.' - The Holy Bible: Romans, 13:12"
+			},
+			{
+				"name":"Robotics",
+				"row": 8,
+				"prerequisites":["Computers"],
+				"quote":"'1. A robot may not injure a human being or, through inaction, allow a human being to come to harm. 2. A robot must obey any orders given to it by human beings, except when such orders would conflict with the First Law. 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.' - Isaac Asimov"
+			},	
+			{
+				"name": "Nuclear Fusion",
+				"row": 6,
+				"prerequisites": ["氘（重氢）和氚（超重氢)的发现","Advanced Ballistics", "Satellites"],
+				"quote": "'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
 			}
-		]
-	},
-
+		]},
 	{
-		"columnNumber": 16,
+		"columnNumber": 24,
 		"era":"Information era",
 		"techCost": 8800,
 		"buildingCost": 750,
@@ -753,37 +748,26 @@
 				"quote":"'The new electronic interdependence recreates the world in the image of a global village.' - Marshall McLuhan"
 			},{
 		"name":"氢弹头",
-	"row":5,"prerequisites":["氘（重氢）和氚（超重氢)的发现","Advanced Ballistics"],
+	"row":6,"prerequisites":["Nuclear Fusion"],
 "quote":"氢弹威力的原理是利用内部小原子弹制造核聚变环境，来将氢原子聚变为氦原子实现的"
 			},
 					{
-		"name":"掌上电脑",
-				"row":4,
-"prerequisites":["寻呼机"],
-"quote":"掌上电脑"
+				"name": "掌上电脑",
+				"row": 5,
+				"prerequisites": ["蜂窝移动网络","Particle Physics"],
+				"quote": "'"
 			},
-			{
-				"name":"Particle Physics",
-				"row": 3,
-				"prerequisites":["Telecommunications","Mobile Tactics","Advanced Ballistics"],
-				"quote":"'Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.' - Isaac Newton"
-			},
-			{
-				"name":"Nuclear Fusion",
-				"row": 6,
-				"prerequisites":["Advanced Ballistics", "Satellites", "Robotics"],
-				"quote":"'The release of atomic energy has not created a new problem. It has readily made more urgent the necessity of solving an existing one.' - Albert Einstein"
-			},
+		
 			{
 				"name":"Nanotechnology",
-				"row": 7,
+				"row": 8,
 				"prerequisites":["Robotics"],
 				"quote":"'The impact of nanotechnology is expected to exceed the impact that the electronics revolution has had on our lives.' - Richard Schwartz"
 			},
 			{
 				"name":"Stealth",
-				"row": 8,
-				"prerequisites":["Robotics", "Lasers"],
+				"row": 9,
+				"prerequisites":["Lasers"],
 				"quote":"'Be extremely subtle, even to the point of formlessness, be extremely mysterious, even to the point of soundlessness. Thereby you can be the director of the opponent's fate.' - Sun Tzu"
 			}
 		]
@@ -791,7 +775,7 @@
 		
 
 	{
-		"columnNumber":17,
+		"columnNumber":25,
 		"era":"Future era",
 		"techCost": 9500,
 		"buildingCost": 750,
@@ -802,21 +786,21 @@
 				"row":3,
 "prerequisites":["Particle Physics"],
 "quote":"常温超导"},
+	{
+		"name":"智能手机",
+				"row":5,
+"prerequisites":["掌上电脑"],
+"quote":"智能手机"},
 				{
 		"name":"量子计算机",
 				"row":4,
 "prerequisites":["Particle Physics"],
 "quote":"量子计算机"
-			},
-			 	{
-		"name":"智能手机",
-				"row":5,
-"prerequisites":["掌上电脑"],
-"quote":"智能手机"
-	},				{
+			},	
+{
 		"name":"氘氘聚变",
 				"row":6,
-"prerequisites":["Nuclear Fusion"],
+"prerequisites":["氢弹头"],
 "quote":"氘氘聚变"
 			},
 					{
@@ -826,7 +810,7 @@
 "quote":"贸易制裁"
 			}]},
 	{
-		"columnNumber": 19,
+		"columnNumber": 26,
 		"era":"Future era",
 		"techCost": 9500,
 		"buildingCost": 750,
@@ -835,7 +819,7 @@
 			{
 				"name":"Future Tech",
 				"row": 5,
-				"prerequisites":["贸易制裁","氘氘聚变", "Nanotechnology", "Stealth","氢弹头","智能手机","量子计算机","常温超导"],
+				"prerequisites":["贸易制裁","氘氘聚变", "Nanotechnology","量子计算机","常温超导","智能手机"],
 				"uniques":["Who knows what the future holds?", "Can be continually researched"],
 				"quote":"'I think we agree, the past is over.' - George W. Bush"
 			}

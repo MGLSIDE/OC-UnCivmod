@@ -10,6 +10,12 @@
   "requiredTech":"Animal Husbandry"
   /*修建建筑所需科技。*/
 },
+	{
+		"name": "Broadway",
+		"cost": 800,
+		"happiness": 1,
+		"isWonder": true
+	},
 { "name":"纺织厂",
    "cost":13,
    "maintenance":5,
