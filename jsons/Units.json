@@ -3,7 +3,7 @@
    "cost":60,
    "unitType":"Melee",
    "movement":4,
-"strength":50,
+"strength":70,
 "requiredTech":"Combined Arms",
 "upgradesTo":"59G-125坦克",
 "obsoleteTech":"Future Tech",
@@ -16,7 +16,7 @@
    "unitType":"Ranged",
    "movement":4,
 "strength":160,
- "rangedStrength":40,
+ "rangedStrength":80,
 "requiredTech":"Lasers",
 "obsoleteTech":"Future Tech",
 "requiredResource":"Oil",
@@ -29,7 +29,7 @@
    "cost":80,
    "unitType":"Melee",
    "movement":4,
-"strength":30,
+"strength":70,
 "requiredTech":"Scientific Theory",
 "obsoleteTech":"Future Tech","uniques":["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles","Can build [永固性堡垒] improvements on tiles","Bonus for units in 2 tile radius 10%"]
 /*设置单位特性*/
@@ -38,7 +38,7 @@
 		"name":"翼骑兵",
 		"unitType":"Mounted",
 		"movement":8,
-		"strength":80,
+		"strength":50,
 		"cost":50,
 		"requiredTech":"Horseback Riding",
 		"requiredResource":"Horses",
@@ -53,7 +53,7 @@
    "cost":60,
    "unitType":"Melee",
    "movement":6,
-"strength":50,
+"strength":80,
 "requiredTech":"Dynamite",
 "uniqueTo":"China",
 "uniques":["Can build [Farm] improvements on tiles","Can build [Fort] improvements on tiles","Can build [Plantation] improvements on tiles","Can build [Quarry] improvements on tiles","Can build [Academy] improvements on tiles","Can build [Mine] improvements on tiles"]
@@ -61,7 +61,7 @@
 		"name": "奥斯曼炮兵",
 		"unitType": "Siege",
 		"movement": 3,
-		"strength": 9,
+		"strength": 49,
 		"rangedStrength": 18,
 		"uniqueTo":"The Ottomans"
 		"range": 3,

@@ -27,7 +27,7 @@
 /*文明被攻击时的弹窗内容*/
 "declaringWar":"以天主之名征服你",
 /*此文明攻击其他文明时，其他收到的弹窗内容*/
-"uniqueName":"贵族选举君主制",
+"uniqueName":"贵族民主",
 /*文明特殊加成名称。*/
 "uniques":["[+3 Culture] per [3] in all cities connected to capital","Unhappiness from number of Cities doubled", "[-20]% unhappiness from population [in all cities]"]
  /*文明特殊加成内容,一个特殊加成名称对应一个特殊加成内容*/}

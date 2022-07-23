@@ -10,12 +10,6 @@
   "requiredTech":"Animal Husbandry"
   /*修建建筑所需科技。*/
 },
-	{
-		"name": "Broadway",
-		"cost": 800,
-		"happiness": 1,
-		"isWonder": true
-	},
 { "name":"纺织厂",
    "cost":13,
    "maintenance":5,
@@ -39,7 +33,7 @@
    		"requiredResource": "Oil",
    /*设置修建建筑必需资源*/
    /*当建筑奇观为国家建筑时此项设置无效。*/
-
+  "requiredTech":"Chemistry"
 
 },
 { "name":"鞍山钢铁厂",
@@ -134,6 +128,28 @@
 		"quote": "'普朗克计划（普朗克卫星）是欧洲航天局在2000年的第三个中型的科学计划。它被设计来以史无前例的高灵敏的角解析力获取宇宙微波背景辐射在整个天空的的各向异性图。普朗克卫星在设计之初的目标计划是提供几个宇宙学和天体物理学的主要讯息，例如，测试早期宇宙的理论和宇宙结构的起源。普朗克巡天者（普朗克卫星）于2009年5月14日由亚利安五号火箭和赫歇尔太空天文台一起发射升空与寻常观测卫星不同，“普朗克”的视野十分广阔，可以对宇宙进行全景“扫描”"
 		
 	},
+		{
+	
+			"name": "格但斯克起重机",
+		"isWonder": true,
+		"cost":60,
+		 	"uniques": ["Must be next to [Coast]", "[+10 Gold] from [Ocean] tiles [in this city]",
+			"[+10 Gold] from [Coast] tiles [in this city]", "[+10 Gold] from [Fish] tiles [in this city]" ],
+			"requiredBuilding": "Harbor",
+			 "uniqueTo":"波兰",
+		"percentStatBonus": {"gold": 25},
+		"requiredTech": "Engineering",
+		"quote": "格但斯克起重机，位于波兰-格但斯克是欧洲现存最大最古老的港口起重机，现为格但斯克的代表性地标之一。这座起重机最初为木造，建于1367年，1442年因火灾焚毁；1442~1444年起重机重建，改为砖造搭配木造的结构。内部有人力驱动的大木轮，最大可承载两吨的重物，兼具码头的起重机和城门的作用。作为一种工作起重机，它被用来转移货物和安装船只桅杆。"},
+			{
+	
+			"name": "光明山修道院",
+		"isWonder": true,
+		"faith": 25,
+		"cost":60,
+			 "uniqueTo":"波兰",
+		 "culture":10,
+		"requiredTech": "Engineering",
+		"quote": "位于琴斯托霍瓦的光明山修道院是波兰最著名的圣母院，也是该国最重要的朝圣地，修道院内的琴斯托霍瓦黑圣母像被赋予了神奇的力量，是光明山修道院最珍贵的财富。据说14世纪时，来自匈牙利的保禄隐修会的修士们在这里建立教堂及修道院，四周有围墙及花圃，因此被誉为JasnaGora “光明山”。"},
 { "name":"中国天眼（FAST）射电望远镜",
   "cost":100,
   "isWonder":true,
@@ -146,7 +162,7 @@
 	,"quote":"中国天眼（FAST）射电望远镜又名500米口径球面射电望远镜（Five-hundred-meter Aperture Spherical radio Telescope，FAST），位于中国贵州省黔南布依族苗族自治州境内，是中国国家“十一五”重大科技基础设施建设项目。500米口径球面射电望远镜于2011年3月25日动工兴建，于2016年9月25日进行落成启动仪式，该科技基础设施进入试运行、试调试工作于2020年1月11日通过中国国家验收工作，正式开放运行。500米口径球面射电望远镜开创了建造巨型望远镜的新模式，建设了反射面相当于30个足球场的射电望远镜，灵敏度达到世界第二大望远镜的2.5倍以上，大幅拓展人类的视野，用于探索宇宙起源和演化。"},
 	{ "name":"养马场"
 	  "cost":30,
-	  "maintenance":23,
+	  "maintenance":10,
 		"uniques":["Provides [4] [Horses]","Limited to [5] per Civilization"],
 		"requiredTech":"Animal Husbandry"
 	
@@ -278,7 +294,6 @@
 		"uniqueTo": "China",
 		"hurryCostModifier": 25,
 		"gold": 2,
-				"requiredResource": "竹林",
 		"uniques": ["[+1 Science] per [2] population [in this city]"],
 		"requiredTech": "Writing"
 	}

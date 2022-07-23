@@ -13,57 +13,106 @@ UnitIcons/工程兵
   index: -1
 UnitIcons/雷达车
   rotate: false
-  xy: 1, 600
+  xy: 1, 100
   size: 640, 500
   orig: 640, 500
   offset: 0, 0
   index: -1
 BuildingIcons/核爆锅炉
   rotate: false
-  xy: 1, 1100
+  xy: 1, 600
   size: 308, 432
   orig: 308, 432
   offset: 0, 0
   index: -1
 BuildingIcons/红旗渠
   rotate: false
-  xy: 1, 1532
+  xy: 1, 1032
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 BuildingIcons/中国天眼（FAST）射电望远镜
   rotate: false
-  xy: 1, 1732
+  xy: 1, 1232
   size: 400, 400
   orig: 400, 400
   offset: 0, 0
   index: -1
 BuildingIcons/太阳帆计划
   rotate: false
-  xy: 1, 2132
+  xy: 1, 1632
   size: 400, 400
   orig: 400, 400
   offset: 0, 0
   index: -1
 BuildingIcons/人类基因组计划
   rotate: false
-  xy: 1, 2532
+  xy: 1, 2032
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 UnitIcons/翼骑兵
   rotate: false
-  xy: 1, 2732
+  xy: 1, 2232
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 NationIcons/波兰
   rotate: false
-  xy: 1, 2932
+  xy: 1, 2432
   size: 500, 491
   orig: 500, 491
+  offset: 0, 0
+  index: -1
+UnitIcons/建设兵团
+  rotate: false
+  xy: 1, 2923
+  size: 286, 500
+  orig: 286, 500
+  offset: 0, 0
+  index: -1
+UnitIcons/59式坦克
+  rotate: false
+  xy: 1, 3423
+  size: 105, 90
+  orig: 105, 90
+  offset: 0, 0
+  index: -1
+UnitIcons/59G-125坦克
+  rotate: false
+  xy: 1, 3513
+  size: 105, 90
+  orig: 105, 90
+  offset: 0, 0
+  index: -1
+ResourceIcons/电能
+  rotate: false
+  xy: 1, 3603
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BuildingIcons/鞍山钢铁厂
+  rotate: false
+  xy: 1, 3703
+  size: 112, 112
+  orig: 112, 112
+  offset: 0, 0
+  index: -1
+ResourceIcons/天然气
+  rotate: false
+  xy: 1, 3815
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ReligionIcons/希腊多神教
+  rotate: false
+  xy: 1, 3915
+  size: 100, 100
+  orig: 100, 100
   offset: 0, 0
   index: -1

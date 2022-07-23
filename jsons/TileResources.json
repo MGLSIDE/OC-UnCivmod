@@ -3,12 +3,12 @@
 "improvement":"发电厂"*/,
 "revealedBy":"Electricity"
 /*资源显示和使用所需科技*/
-},{"name":"竹林",
+},{"name":"天然气",
 /*资源名称*/
 "resourceType":"Strategic"/*,
 资源类型
 "improvement":"发电厂"*/,
-		"terrainsCanBeFoundOn": ["Jungle","Forest"]
+		"terrainsCanBeFoundOn": ["Desert","Coast","Tundra","Snow","Marsh","Jungle"]
 		/*资源可出现地带*/
 }
 ]
